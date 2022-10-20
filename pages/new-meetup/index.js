@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 
-const newMeetupPage = () => {
+const NewMeetupPage = () => {
   const router = useRouter();
   const meetupHandler = async (data) => {
     const res = await fetch("/api/new-meetup", {
@@ -18,4 +18,4 @@ const newMeetupPage = () => {
   return <NewMeetupForm onAddMeetup={meetupHandler} />;
 };
 
-export default newMeetupPage;
+export default NewMeetupPage;
