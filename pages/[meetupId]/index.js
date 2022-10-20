@@ -33,6 +33,7 @@ export async function getStaticProps(context) {
       title: data.title,
       address: data.address,
       image: data.image,
+      description: data.description,
     },
   };
 }
