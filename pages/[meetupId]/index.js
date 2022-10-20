@@ -35,6 +35,7 @@ export async function getStaticProps(context) {
       image: data.image,
       description: data.description,
     },
+    revalidate: 10,
   };
 }
 
